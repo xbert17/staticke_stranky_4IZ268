@@ -1,0 +1,210 @@
+body{
+  background: rgb(251,251,251);
+  background: radial-gradient(circle, rgba(251,251,251,1) 71%, rgba(253,185,66,1) 100%);
+  padding: 0;
+  margin: 0;
+}
+
+h1{display: none;}
+
+#wrapper{
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  border: 2px solid rgb(85, 52, 9);
+}
+
+header{
+  background-image: url(header.jpg);
+  background-size: cover;
+  color: white;
+  position: relative;
+  border: 2px solid rgb(85, 52, 9)(0, 0, 0);
+  height: 150px;
+}
+
+#logo{
+  display: block;
+  margin-left: 420px;
+}
+
+footer{
+  clear: both;
+  background: red;
+  color: white;
+  padding: 20px;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+#soc_site{
+  position: relative;
+  float: left;
+}
+
+#navigacni_blok{
+  float: right;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: auto;
+  width: 875px;
+  height: 213px;
+  border-bottom: 2px solid rgb(85, 52, 9);
+  background: rgb(22,162,97);
+  background: linear-gradient(125deg, rgba(22,162,97,1) 8%, rgba(255,255,255,1) 37%, rgba(247,247,247,1) 63%, rgba(254,0,0,1) 92%);
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+nav li{
+  padding: 5px 10px;
+  display:list-item;
+  text-align: center;
+}
+
+main{
+  box-sizing: border-box;
+  width: 1000px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Comfortaa;
+}
+
+#contactLink{
+  position: fixed;
+  font-family: Comfortaa;
+  top: 0;
+  right: 20px;
+  display: block;
+  background: rgb(85, 52, 9);
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navigace{
+  font-family: Comfortaa;
+  font-style:normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 100%;
+  text-decoration: none;
+}
+
+.navigace:hover {
+  color: rgba(253,185,66,1);
+    font-size: 120%;
+}
+
+#here{
+  font-family: Comfortaa;
+  font-style:normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgba(253,185,66,1);
+  font-size: 120%;
+  text-decoration: none
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  text-shadow: -0.7px 0 black, 0 0.7px black, 0.7px 0 black, 0 -0.7px black;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+  color:white;
+  font-size: 12px;
+  text-shadow: -0.7px 0 black, 0 0.7px black, 0.7px 0 black, 0 -0.7px black;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
