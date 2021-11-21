@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Webové stránky italské restaurace La palma na Palmovce" />
+    <meta name="author" content="Tatiana Berdnikova" />
+    <meta name="keywords" content="pizza, palmovka, restaurace, restaurant, italská kuchyně, pasta, spaghetti" />
+
+    <title>Restaurace La Palma: Jídelní lístek</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css-jidelni_listek+napoje.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css-jidelni_listek+napoje-print.css" media="print" />
+
+
+</head>
+<body>
+    <h1>Restaurace La Palma: Jídelní lístek</h1>
+    <div id="wrapper">
+        <header>
+            <div>
+                <a href="hlavni.html">
+                    <img id="logo" src="logo_la_palma-2.png" alt="logo" width="300" height="146"/>
+                </a>
+            </div>
+        </header>
+        <nav id="soc_site">
+            <div>
+
+                <img src="panel_odkazu.png" alt="odkazy na sociální sítě facebook, instagram, vk" width="125" height="215" usemap="#planetmap"/>
+                <map name="planetmap">
+                    <!-- x1,y1,x2,y2 Specifies the coordinates of the left, top, right, bottom corner of the rectangle (for shape="rect") -->
+                    <area shape="rect" coords="35,10,91,67" alt="to facebook" href="https://www.facebook.com/lapalmapizzerie"/>
+                    <area shape="rect" coords="34,75,94,135" alt="to instagram" href="https://www.instagram.com/">
+                    <area shape="rect" coords="32,142,92,202" alt="to vk" href="https://www.vk.com/">
+                </map>
+            </div>
+        </nav>
+        <nav id="navigacni_blok">
+            <div>
+            <ul>
+                <li>
+                    <a href="o_nas.html" class="navigace">O nás</a>
+                </li>
+                <li>
+                    <a href="aktuality.html" class="navigace">Aktuality</a>
+                </li>
+                <li>
+                    <a  id="here" href="jidelni_listek.html" class="navigace">Jídelní lístek</a>
+                </li>
+                <li>
+                    <a href="napoje.html" class="navigace">Nápoje</a>
+                </li>
+                <li>
+                    <a href="galerie.html" class="navigace">Galerie</a>
+                </li>
+                <li>
+                    <a href="rozvoz_jidel.html" class="navigace">Rozvoz jídel</a>
+                </li>
+                <li>
+                    <a href="kontakty.html" class="navigace">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        <main>
+            <div class="schovat" id="prvni">
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>PIZZA O 32cm/ 40cm</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>PIZZA VERDE O40CM<span class="zarovnani">239.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, listový špenát, žampiony, česnek, slanina</dd>
+                        <dt>PIZZA ALLA CARBONARA O40CM<span class="zarovnani">259.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, anglická slanina, vejce, drcený pepř</dd>
+                        <dt>PIZZA PROSCIUTTO E RUCOLA O40CM<span class="zarovnani">269.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, parmská šunka, rukola, parmazán</dd>
+                        <dt>PIZZA ST. JACOBO<span class="zarovnani">175.00 Kč / 229.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, slanina, uzený sýr, drcený pepř</dd>
+                        <dt>PIZZA MEXICANA<span class="zarovnani">185.00 Kč / 239.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, pikantní salám, chilli, červená cibule a vejce</dd>
+                        <dt>PIZZA PICCANTE<span class="zarovnani">185.00 Kč / 239.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, salám, italský pikantní salám, česnek, čerstvé chilli papričky</dd>
+                        <dt>PIZZA BANDIERA<span class="zarovnani">160.00 Kč / 209.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, cherry rajčátka, rukola, parmazán</dd>
+                        <dt>PIZZA BOMBAY<span class="zarovnani">165.00 Kč / 219.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, kuřecí maso, ananas, kari koření, čerstvé chilli papričky</dd>
+                        <dt>PIZZA POLLO E BROCCOLI<span class="zarovnani">165.00 Kč / 229.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, kuřecí maso, brokolice, žampióny a česnek</dd>
+                        <dt>PIZZA BELLISIMO<span class="zarovnani">195.00 Kč / 235.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, slanina, kukuřice, červená cibulka, chilli papričky, vejce, petrželka</dd>
+                        <dt>PIZZA PRIMAVERA<span class="zarovnani">185.00 Kč / 259.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, kuřecí kousky, kukuřice, slanina, listový špenát, paprika, česnek</dd>
+                        <dt>PIZZA GIOVANNI<span class="zarovnani">175.00 Kč / 209.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, uzený sýr, slanina, špenát, česnek</dd>
+                        <dt>PIZZA QUATTRO FORMAGGI BIANCA<span class="zarovnani">175.00 Kč / 219.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, gorgonzola, hobliny parmazánu, mascarpone</dd>
+                        <dt>PIZZA ALLA PANNA<span class="zarovnani">175.00 Kč / 239.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, kuřecí kousky, slanina</dd>
+                        <dt>PIZZA CAPRICCIOSA<span class="zarovnani">175.00 Kč / 229.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, šunka od kostí, žampiony, artyčok, černé a zelené olivy</dd>
+                        <dt>PIZZA VEGETARIANA<span class="zarovnani">165.00 Kč / 209.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, lilek, černé a zelené olivy, artyčok, cuketa</dd> 
+                        <dt>PIZZA CAPRINA<span class="zarovnani">185.00 Kč / 259.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, kozí sýr, čerstvá rukola, brusinky</dd>
+                        <dt>PIZZA MAESTRO<span class="zarovnani">175.00 Kč / 219.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, šunka od kosti, hermelín, brusinky</dd>
+                        <dt>PIZZA QUATTRO STAGIONI<span class="zarovnani">185.00 Kč / 229.00 Kč</span></dt>
+                        <dd>1/4  Mexicana, 1/4  Prosciutto e Funghi, 1/4  Prosciutto di Parma, 1/4  Margherita</dd>
+                        <dt>PIZZA ARCO<span class="zarovnani">175.00 Kč / 205.00 Kč</span></dt>
+                        <dd>smetana, mozzarella, šunka od kosti, špenát, chilli papričky, vejce</dd>
+                        <dt>PIZZA TONNATA<span class="zarovnani">175.00 Kč / 229.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, tuňák, olivy, cibule</dd>
+                        <dt>PIZZA HAWAI<span class="zarovnani">165.00 Kč / 209.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, šunka od kosti, ananas</dd>
+                        <dt>PIZZA MANGIAMI<span class="zarovnani">185.00 Kč / 265.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, šunka od kostí, salám, pravý italský pikantní salám, oregáno</dd>
+                        <dt>PIZZA MONTE NEGRO<span class="zarovnani">185.00 Kč / 235.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, parmská šunka, slanina</dd>
+                        <dt>PIZZA AL SALAMINO<span class="zarovnani">155.00 Kč / 209.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, salám</dd>
+                        <dt>PIZZA PROSCIUTTO E FUNGHI<span class="zarovnani">155.00 Kč / 195.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, šunka od kostí, žampiony</dd>
+                        <dt>PIZZA AL PROSCIUTTO COTTO<span class="zarovnani">145.00 Kč / 185.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, šunka od kosti</dd>
+                        <dt>PIZZA AL FUNGHI<span class="zarovnani">145.00 Kč / 165.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, žampiony</dd>
+                        <dt>PIZZA MARGHERITA<span class="zarovnani">140.00 Kč / 155.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, čerstvá bazalka</dd>
+                        <dt>CALZONE (KAPSA)<span class="zarovnani">165.00 Kč</span></dt>
+                        <dd>tomato, mozzarella, šunka od kostí, žampióny, vejce</dd>
+                        <dt>PIZZA PANE CON FORMAGGIO O26CM<span class="zarovnani">100.00 Kč</span></dt>
+                        <dd>pizza chléb s česnekem, oregánem a mozzarellou</dd>
+                        <dt>PIZZA PANE O26CM<span class="zarovnani">80.00 Kč</span></dt>
+                        <dd>pizza chléb s česnekem a oregánem</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>ZUPPE – POLÉVKY</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>MINESTRONE 0,2L<span class="zarovnani">65.00 Kč</span></dt>
+                        <dd>Italská zeleninová polévka s bazalkou</dd>
+                        <dt>CREMA DI POMODORO 0,2L<span class="zarovnani">59.00 Kč</span></dt>
+                        <dd>Tomatovo-smetanový krém s bazalkovou kresbou</dd>
+                        <dt>ZUPPA D´AGLIO 0,2L<span class="zarovnani">65.00 Kč</span></dt>
+                        <dd>Česnečka se šunkou, sýrem, majoránkou a krutony</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>CARNE – MASO, <br> PESCE – RYBY</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>SUPREME DI POLLO ALLA GRIGLIA 250G<span class="zarovnani">185.00 Kč</span></dt>
+                        <dd>Kuřecí prso s kůží a kostí restované na másle a bylinkách</dd>
+                        <dt>COSTINE DI MAIALE AL B.B.Q. 400G<span class="zarovnani">209.00 Kč</span></dt>
+                        <dd>Grilovaná vepřová žebra, podávaná s domácí B.B.Q. omáčkou a chlebem</dd>
+                        <dt>STEAK PANCETTA 200G<span class="zarovnani">229.00 Kč</span></dt>
+                        <dd>Vepřový steak obalený slaninou s pepřovou omáčkou</dd>
+                        <dt>FILETTO DI MAIALE AL FUNGHI 200G<span class="zarovnani">249.00 Kč</span></dt>
+                        <dd>Vepřová panenka obalená ve směsi bylinek s hříbkovou omáčkou</dd>
+                        <dt>FLAP STEAK 200G<span class="zarovnani">299.00 Kč</span></dt>
+                        <dd>Vyzrálé maso z hovězího pupku (Irsko)</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>FATA SULLA RICHIESTA <br> s úpravou dle výběru</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>AI FUNGHI PORCINI<span class="zarovnani">49.00 Kč</span></dt>
+                        <dd>s omáčkou z pravých hříbků</dd>
+                        <dt>AL GORGONZOLA<span class="zarovnani">45.00 Kč</span></dt>
+                        <dd>přeliv z modrého sýru gorgonzola</dd>
+                        <dt>ALLA MOSTARDA<span class="zarovnani">49.00 Kč</span></dt>
+                        <dd>lehce pikantní omáčka z dijonské hořčice a smetany</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>GNOCCHI – NOKY</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>GNOCCHI AL PESTO 400G<span class="zarovnani">155.00 Kč</span></dt>
+                        <dd>bazalka, parmazán, piniové oříšky, fazole</dd>
+                        <dt>GNOCCHI POLLO E PEPERONI 400G<span class="zarovnani">189.00 Kč</span></dt>
+                        <dd>s kuřecím masem, červenou paprikou, modrým sýrem, smetanou, omáčkou z rajčat, petrželí a parmazánem</dd>
+                        <dt>GNOCCHI LIVIGNO 400G<span class="zarovnani">185.00 Kč</span></dt>
+                        <dd>Zapečené noky s mozzarellou, smetanou, hříbky a slaninou</dd>
+                        <dt>GNOCCHI MASCARPONE E FUNGHI 400G<span class="zarovnani">189.00 Kč</span></dt>
+                        <dd>s vepřovou pečení, hříbky, červenou cibulkou, smetanou a mascarpone</dd>
+                        <dt>GNOCCHI SALMONE CREMA 400G<span class="zarovnani">199.00 Kč</span></dt>
+                        <dd>s lososem, špenátem a smetanou</dd>
+                        <dt>GNOCCHI QUATTRO FORMAGGI 400G<span class="zarovnani">199.00 Kč</span></dt>
+                        <dd>se smetanou, pecorinem, gorgonzolou, parmazánem a mozzarellou</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>ANTIPASTI – PŘEDKRMY</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>TARTAR DI SALMONE 100G<span class="zarovnani">169.00 Kč</span></dt>
+                        <dd>Tatarský biftek z lososa, rukola, sůl</dd>
+                        <dt>CARPACCIO DI FELETTO SERVITO CON PESTO GENOVESE 80G<span class="zarovnani">179.00 Kč</span></dt>
+                        <dd>Carpaccio z hovězí svíčkové s bazalkovým pestem, hobliny parmazánu</dd>
+                        <dt>MOZZARELLA CAPRESE 100G<span class="zarovnani">119.00 Kč</span></dt>
+                        <dd>Sýr mozzarella s rajčaty, bazalkou a olivovým olejem</dd>
+                        <dt>CAPRINO AL FORNO 80G<span class="zarovnani">155.00 Kč</span></dt>
+                        <dd>Gratinovaný kozí sýr s lesním medem, servírovaný na čerstvé rukole s vinnou redukcí, podávaný s toustovým chlebem</dd>
+                        <dt>BRUSCETTA AL POMODORO 3 KS<span class="zarovnani">95.00 Kč</span></dt>
+                        <dd>Opečená bageta s rajčaty ochucenými olivovým olejem, česnekem, bazalkou a hoblinami parmazánu</dd>
+                        <dt>INSALATA FRESCA AL CAMMEMBERT 200G<span class="zarovnani">139.00 Kč</span></dt>
+                        <dd>Rozpečený hermelín na ledovém salátu s brusinkami, cherry rajčátky a ciabattou</dd>
+                        <dt>PATATINA E AGLIO 150G<span class="zarovnani">65.00 Kč</span></dt>
+                        <dd>Domácí brambůrky s česnekovým dipem</dd>
+                        <dt>TARTAR DI CARNE 100G<span class="zarovnani">179.00 Kč</span></dt>
+                        <dd>Hovězí tatarský biftek z pravé svíčkové, topinky</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>INSALATA GRANDE <br> VELKÉ SALÁTOVÉ TALÍŘE</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>INSALATA SALMONE 400G<span class="zarovnani">199.00 Kč</span></dt>
+                        <dd>Ledový salát, rukola, rajče, grilovaný losos, olivový olej, toast</dd>
+                        <dt>INSALATA TONNO 400G<span class="zarovnani">189.00 Kč</span></dt>
+                        <dd>Ledový salát, rajčata, okurka, paprika, tuňák, vejce, olivy, cibule, olivový olej, citron</dd>
+                        <dt>INSALATA CESARE CON POLLO 400G<span class="zarovnani">159.00 Kč</span></dt>
+                        <dd>Římský salát, grilované kuřecí maso, slanina, parmazán, ančovičkový dresing a česnekové večky</dd>
+                        <dt>INSALATA ALLA RAPA ROSSA 400G<span class="zarovnani">159.00 Kč</span></dt>
+                        <dd>Pečená červená řepa s balkánským sýrem, rukolou, vlašskými ořechy, cherry rajčaty a medovou zálivkou</dd>
+                        <dt>INSALATA MISTA 400G<span class="zarovnani">149.00 Kč</span></dt>
+                        <dd>Mix listových salátů, cherry rajčátky, mrkve, okurky a olivového oleje</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>DRESSINGS <br> ZÁLIVKY NA SALÁT</span>
+                </button>
+                <div>
+                    <p>LIBOVOLNÁ ZE SEZNAMU: <span class="zarovnani">35.00 Kč</span></p>
+                    <ul>
+                        <li>Bazalko-česnekový</li>
+                        <li>Medovo-balzamikový</li>
+                        <li>Limetkový s parmazánem</li>
+                        <li>Caesar-dresing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>PASTA FRESCA <br> ČERSTVÉ TĚSTOVINY</span>
+                </button>
+                <div>
+                    <p id="zvyrazneni">Těstoviny rádi připravíme dle vašeho výběru: spaghetti, penne, tagliatelle, sépiové tagliatelle</p>
+                    <dl>
+                        <dt>AL SALMONE 400G<span class="zarovnani">189.00 Kč</span></dt>
+                        <dd>s lososem, brokolicí, koprem, mandlemi a smetanou</dd>
+                        <dt>LASAGNE ALL´BOLOGNESE 400G<span class="zarovnani">179.00 Kč</span></dt>
+                        <dd>s masovou směsí Bolognese, drcenými rajčaty, bešamelem a parmazánem</dd>
+                        <dt>POLLO & CURRY 400G<span class="zarovnani">170.00 Kč</span></dt>
+                        <dd>kuřecí maso, kari, smetana, parmazán</dd>
+                        <dt>QUATTRO FORMAGGI 400G<span class="zarovnani">169.00 Kč</span></dt>
+                        <dd>se smetanou, pecorinem, gorgonzolou, parmazánem a mozzarellou</dd>
+                        <dt>CON POLLO E SPINACI 400G<span class="zarovnani">175.00 Kč</span></dt>
+                        <dd>s kuřecím masem, špenátem, česnekem a smetanou, parmazánem</dd>
+                        <dt>AL GORGONZOLA 400G<span class="zarovnani">165.00 Kč</span></dt>
+                        <dd>s gorgonzolou, hříbky, smetanou a vlašskými ořechy</dd>
+                        <dt>AMATRICIANA 400G<span class="zarovnani">170.00 Kč</span></dt>
+                        <dd>se slaninou, guanciale, cibulí, česnekem, čerstvými chilli papričkami, tomatem, petrželkou a pecorinem (ovčí sýr)</dd>
+                        <dt>AL PESTO E POLLO 400G<span class="zarovnani">170.00 Kč</span></dt>
+                        <dd>s kuřecím masem, domácím bazalkovým pesto, smetanou a parmazánem</dd>
+                        <dt>FUNGHI MISTI 400G<span class="zarovnani">169.00 Kč</span></dt>
+                        <dd>směs hub restovaných na másle a bílém víně, zjemněná lanýžovou pastou s rukolou, parmazán</dd>
+                        <dt>SALSICCIA E PORRI 400G<span class="zarovnani">165.00 Kč</span></dt>
+                        <dd>s italskou klobásou, dušeným pórkem, rajčatovou omáčkou a parmazánem</dd>
+                        <dt>ALL POMODORINO 400G<span class="zarovnani">145.00 Kč</span></dt>
+                        <dd>s cherry rajčátky, česnekem, čerstvou bazalkou, tomatem a parmazánem</dd>
+                        <dt>BOLOGNESE 400G<span class="zarovnani">165.00 Kč</span></dt>
+                        <dd>s masovou směsí, tomatem, sypané parmazánem</dd>
+                        <dt>ALLA CARBONARA 400G<span class="zarovnani">165.00 Kč</span></dt>
+                        <dd>s pancettou, česnekem, čerstvým drceným pepřem a žloutky smíchané s parmazánem</dd>
+                        <dt>AGLIO E OLIO 400G<span class="zarovnani">145.00 Kč</span></dt>
+                        <dd>s olivovým olejem, chilli papričkami, česnekem, petrželkou a parmazánem</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>RISOTTI – RIZOTA</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>RISOTTO ALLA RAPA ROSA E FORMAGGIO DI CAPRA 400G<span class="zarovnani">189.00 Kč</span></dt>
+                        <dd>Risotto s červenou řepou, rukolou, kozím sýrem, piniovými oříšky, krémovým balsamico</dd>
+                        <dt>RISOTTO PAOLLO 400G<span class="zarovnani">189.00 Kč</span></dt>
+                        <dd>s brokolicí, kuřecím masem, kari, smetanou a parmazánem</dd>
+                        <dt>RISOTTO CON FUNGHI PORCINI 400G<span class="zarovnani">185.00 Kč</span></dt>
+                        <dd>hřiby, petržel, víno, šalotka, parmazán</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>CONTORNI – PŘÍLOHY</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>TOAST TMAVÝ/SVĚTLÝ 1KS<span class="zarovnani">5.00 Kč</span></dt>
+                        <dt>FOCACCIA 180G<span class="zarovnani">45.00 Kč</span></dt>
+                        <dt>HRANOLKY 200G<span class="zarovnani">55.00 Kč</span></dt>
+                        <dt>VERDURE ALLA GRIGLIA 180G<span class="zarovnani">69.00 Kč</span></dt>
+                        <dd>Grilovaná zelenina – lilek, paprika, cuketa, červená cibule</dd>
+                        <dt>FAGIOLI VERDI 180G<span class="zarovnani">60.00 Kč</span></dt>
+                        <dd>Zelené fazolky s červenou cibulkou a slaninou</dd>
+                        <dt>PATATE SCHIACCIATE 180G<span class="zarovnani">65.00 Kč</span></dt>
+                        <dd>Šťouchané brambory s máslem a mladou cibulkou</dd>
+                        <dt>PATATE ARROSTO 180G<span class="zarovnani">69.00 Kč</span></dt>
+                        <dd>Pečené brambory se slaninou</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>DOLCE – DEZERTY</span>
+                </button>
+                <div>
+                    <dl>
+                        <dt>TIRAMISU<span class="zarovnani">85.00 Kč</span></dt>
+                        <dd>Sušenky, mascarpone, smetana, Amaretto, kakao</dd>
+                        <dt>CHEESE CAKE<span class="zarovnani">69.00 Kč</span></dt>
+                        <dd>Cheese cake, šlehačka a lesní plody</dd>
+                        <dt>CRESPELLE NERE CON CATALANO<span class="zarovnani">79.00 Kč</span></dt>
+                        <dd>Černá palačinka s katalánským krémem a kakaem, čoko polevou a šlehačkou</dd>
+                        <dt>PANNA COTTA AL CIOCCOLATO<span class="zarovnani">69.00 Kč</span></dt>
+                        <dd>Vanilkový krém, čokoládový topping, maliny, jahody</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class=schovat>
+                <button class="button" style="vertical-align:middle" onclick="prohodit(this.parentNode, 'ukazat', 'schovat')">
+                    <span>AGGUINTE – PŘÍSADY</span>
+                </button>
+                <div>
+                    <p>LIBOVOLNÁ ZE SEZNAMU: <span class="zarovnani">45.00 Kč</span></p>
+                        <ul>
+                            <li>Krevety (50g)</li>
+                            <li>Parmská šunka (50g)</li>
+                        </ul>
+                    <p>LIBOVOLNÁ ZE SEZNAMU: <span class="zarovnani">35.00 Kč</span></p>
+                        <ul>
+                            <li>Italský salám (50g)</li>
+                            <li>Gorgonzola (35g)</li>
+                            <li>Parmazán (35g)</li>
+                            <li>Sušená rajčata (40g)</li>
+                        </ul>
+                    <p>LIBOVOLNÁ ZE SEZNAMU: <span class="zarovnani">29.00 Kč</span></p>
+                        <ul>
+                            <li>Kuřecí maso (50g)</li>
+                            <li>Salám (50g)</li>
+                            <li>Šunka (50g)</li>
+                            <li>Mozzarella (50g)</li>
+                        </ul>
+                    <p>LIBOVOLNÁ ZE SEZNAMU: <span class="zarovnani">25.00 Kč</span></p>
+                        <ul>
+                            <li>Ananas (50g)</li>
+                            <li>Olivy černé nebo zelené (15ks)</li>
+                            <li>Anglická slanina (50g)</li>
+                            <li>Artyčok (30g)</li>
+                            <li>Lilek (50g)</li>
+                            <li>Kapary (20g)</li>
+                            <li>Brusinky (20g)</li>
+                        </ul>
+                    <p>LIBOVOLNÁ ZE SEZNAMU: <span class="zarovnani">20.00 Kč</span></p>
+                        <ul>
+                            <li>Brokolice (50g)</li>
+                            <li>Špenát (50g)</li>
+                            <li>Kukuřice (50g)</li>
+                            <li>Žampióny (75g)</li>
+                            <li>Feferonka (1ks)</li>
+                        </ul>
+                    <p>Vejce (1ks)<span class="zarovnani">10.00 Kč</span></p>
+                </div>
+            </div>
+            <script src="js-jidelni_listek+napoje.js"></script>
+        </main>
+
+        <footer>
+            Copyright...
+        </footer>
+    </div>
+    <a href="kontakty.html" id="contactLink">Kontaktujte nás...</a>
+</body>
+</html>
